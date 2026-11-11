@@ -90,10 +90,10 @@ D:\BiliTools\yt-dlp.exe -F "https://www.bilibili.com/video/BV1FC4y1m7H8"
 下面的例子假设已安全准备本机 Cookie 文件，注意替换路径；不要把真实 Cookie 放在仓库中：
 
 ```bat
-D:\BiliTools\yt-dlp.exe --cookies "D:\BiliTools\cookies.txt" --yes-playlist --merge-output-format mp4 --ffmpeg-location "D:\BiliTools\ffmpeg\bin\ffmpeg.exe" -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080]" -o "D:\视频下载\%%(playlist_index)02d %%(title)s [%%(id)s].%%(ext)s" "https://www.bilibili.com/video/BV155Pez1ErW"
+D:\BiliTools\yt-dlp.exe --cookies "D:\BiliTools\cookies.txt" --yes-playlist --merge-output-format mp4 --ffmpeg-location "D:\BiliTools\ffmpeg\bin\ffmpeg.exe" -f "bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080]" -o "D:\视频下载\%(playlist_index)02d %(title)s [%(id)s].%(ext)s" "https://www.bilibili.com/video/BV155Pez1ErW"
 ```
 
-上面的百分号按 cmd 直接粘贴时应使用单个 `%`；如果保存为 .bat 批处理文件，应使用两个 `%%`。以当时官方文档及账号权限为准。下载完成后仍须逐集核对时长。
+上面的命令可直接粘贴到 cmd；如果保存为 .bat 批处理文件，输出模板中的每个 `%` 应写成 `%%`。以当时官方文档及账号权限为准。下载完成后仍须逐集核对时长。
 
 ## 五、检查完整版
 
