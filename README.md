@@ -1,5 +1,17 @@
 # B站视频下载与检查指南
 
+## 直接下载 Windows 工具包
+
+打开 [工具发行版 v1.0.0](https://github.com/ylele1479-collab/bilibili-download-guide/releases/tag/v1.0.0)，展开页面底部的“资源 / Assets”，下载以下文件：
+
+- `BBDownT-2.2.2-win-x64.exe`：主下载工具，放入 `D:\BiliTools` 并重命名为 `BBDownT.exe`。
+- `yt-dlp-2026.10.26-win-x64.exe`：备用下载工具，放入同一目录并重命名为 `yt-dlp.exe`。
+- `ffmpeg-7.1-essentials_build.zip`：音视频合并与检查工具。解压后将内部 `bin` 文件夹放到 `D:\BiliTools\ffmpeg\bin`，确保该目录内有 `ffmpeg.exe`。
+- `LICENSES.txt`：上游工具许可证；FFmpeg 原版压缩包中也有许可证。
+
+这些是本次使用的版本存档；日后如果 B 站接口更新，优先到下方官方项目检查新版本。发行页面附有来源和 SHA-256 校验值。
+
+
 > 个人操作记录｜最后核对：2026-11-11｜Windows
 >
 > 本指南用于保存自己有权观看和保存的视频。充电专属内容需要账号具备该视频对应档位的观看权限；大会员画质和充电档位是不同的条件。工具及平台规则可能改变，使用前请查看上游项目的最新说明。
